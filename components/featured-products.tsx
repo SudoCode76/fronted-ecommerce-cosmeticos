@@ -9,6 +9,7 @@ import { Card, CardContent } from "./ui/card";
 import { Expand, ShoppingCart } from "lucide-react";
 import IconButton from "./icon-button";
 import { useRouter } from "next/navigation";
+import { formatPrice } from "@/lib/formatPrice";
 
 const FeaturedProducts = () => {
     const { result, loading }: ResponseType = useGetFeaturedProducts();
@@ -55,8 +56,8 @@ const FeaturedProducts = () => {
                                             <div className="flex justify-between items-center px-4 py-3 bg-white rounded-b-lg">
                                                 <h3 className="text-lg font-bold truncate">{productoNombre}</h3>
                                                 <p className="px-3 py-1 text-white bg-black rounded-full dark:bg-white dark:text-black w-fit">
-                                                    {precio}
-                                                    <span className="font-bold">$</span>
+                                                    {formatPrice(product.precio) }
+                                                    
                                                 </p>
                                             </div>
                                         </Card>

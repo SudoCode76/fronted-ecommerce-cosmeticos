@@ -2,8 +2,12 @@
 
 
 import { useGetCategoryProduct } from "@/api/getCategoryProduct"
+import { Separator } from "@/components/ui/separator"
 import { ResponseType } from "@/types/response"
 import { useParams, useRouter } from "next/navigation"
+import FiltersControlCategory from "./components/filters-controls-category"
+import ProductCard from "./components/product-card"
+import { ProductType } from "@/types/product"
 
 export default function page(){
     const params = useParams()
@@ -18,6 +22,17 @@ export default function page(){
         {result && !loading && (
             <h1 className="text-3xl font-medium">{result[0].categoria.categoriaNombre}</h1>
         )}
+
+        <Separator />
+
+            <div className="sm:flex sm:justify-between">
+                {result && !loading && (
+                    result.map((product: ProductType) =>(
+                    <ProductCard key={product.id} product={product} />
+                    ))
+                )}
+
+            </div>
        </div>
 
     )
