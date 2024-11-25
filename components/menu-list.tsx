@@ -87,37 +87,37 @@ export default MenuList
 const categories: { title: string; href: string; description: string }[] = [
     {
       title: "Maquillaje",
-      href: "/categorias/maquillaje",
+      href: "/category/maquillaje",
       description:
         "Explora labiales, bases, sombras y más para crear looks únicos.",
     },
     {
       title: "Cuidado de la piel",
-      href: "/categorias/cuidado-de-la-piel",
+      href: "/category/cuidado-de-la-piel",
       description:
         "Productos diseñados para hidratar, limpiar y rejuvenecer tu piel.",
     },
     {
       title: "Cuidado del cabello",
-      href: "/categorias/cuidado-del-cabello",
+      href: "/category/cuidado-del-cabello",
       description:
         "Shampoos, acondicionadores y tratamientos para un cabello sano y radiante.",
     },
     {
       title: "Fragancias",
-      href: "/categorias/fragancias",
+      href: "/category/fragancias",
       description:
         "Encuentra perfumes y lociones que reflejan tu esencia personal.",
     },
     {
       title: "Accesorios",
-      href: "/categorias/accesorios",
+      href: "/category/accesorios",
       description:
         "Brochas, esponjas y herramientas esenciales para tu rutina de belleza.",
     },
     {
       title: "Sets y regalos",
-      href: "/categorias/sets-y-regalos",
+      href: "/category/sets-y-regalos",
       description:
         "Los mejores kits y sets ideales para regalar o consentirte.",
     },
